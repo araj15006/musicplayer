@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Playpen+Sans');
+        @import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playpen Sans', sans-serif;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            color: aliceblue;
+        }
+
+        nav li {
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+        }
+
+        .logo span {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            background-color: black;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            align-items: center;
+            width: 70%;
+            height: 37.3rem;
+            border-radius: 20px;
+            padding: 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .songlist {
+            width: 100%;
+        }
+
+        .songitems {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgba(30, 36, 30, 0.3);
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .songitems img {
+            width: 60px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .song-details {
+            flex-grow: 1;
+        }
+
+        .songname {
+            font-size: 1.2rem;
+        }
+
+        .duration {
+            font-size: 1rem;
+        }
+
+        .playitem {
+            cursor: pointer;
+            fill: #ffffff;
+        }
+
+        .bottom {
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icons svg {
+            cursor: pointer;
+            fill: #ffffff;
+            height: 32px;
+        }
+
+        #myProgressBar {
+            width: 70%;
+            margin: 10px 0;
+        }
+
+        .played {
+            display: flex;
+            align-items: center;
+            margin-top: -4px;
+        }
+
+        .played img {
+            width: 50px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        .played p {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .logo img {
+                width: 30px;
+            }
+
+            .logo span {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+            }
+
+            .logo img {
+                width: 25px;
+            }
+
+            .logo span {
+                font-size: 1rem;
+            }
+
+            .songitems img {
+                width: 50px;
+            }
+
+            .songname {
+                font-size: 1rem;
+            }
+
+            .duration {
+                font-size: 0.8rem;
+            }
+
+            .playitem {
+                height: 24px;
+            }
+
+            .played img {
+                width: 40px;
+                height: 20px;
+            }
+
+            .played p {
+                font-size: 0.9rem;
+            }
+        }
+
+        body {
+            background-image: url("img/mainCover.jpg");
+            background-size: cover;
+        }
